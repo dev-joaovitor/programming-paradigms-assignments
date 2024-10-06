@@ -35,21 +35,19 @@ class Taxes {
 		System.out.println("-----------------------------");
 		
 		double monthlySalaryIncome = annualSalaryIncome / 12;
-		double salaryTax = 0;
+		double salaryTaxRate = 0;
 		
 		if (monthlySalaryIncome >= 3000 && monthlySalaryIncome < 5000) {
-			salaryTax = (double) 10/100;
+			salaryTaxRate = (double) 10/100;
 		} else if (monthlySalaryIncome >= 5000) {
-			salaryTax = (double) 20/100;
-		} else {			
-			salaryTax = 0;
+			salaryTaxRate = (double) 20/100;
 		}
 		
 		System.out.println("### INCOME TAX REPORT ###");
 		System.out.println();
 		System.out.println("* INCOME ESTABLISHED");
 		
-		double salaryIncomeTax = annualSalaryIncome * salaryTax;
+		double salaryIncomeTax = annualSalaryIncome * salaryTaxRate;
 		System.out.println("Salary income tax: " + salaryIncomeTax);
 		
 		double serviceProvisioningIncomeTax =
@@ -63,29 +61,28 @@ class Taxes {
 		System.out.println("Capital gain tax: " + capitalGainTax);
 		System.out.println();
 		System.out.println("* DEDUCTIONS");
-		double dueTaxes = salaryIncomeTax + serviceProvisioningIncomeTax + capitalGainTax;
-		System.out.println("Due taxes: " + dueTaxes);
-		System.out.println("MAX_DEDUCTIBLE_RATE: " + MAX_DEDUCTIBLE_RATE);
-		System.out.println("maxDeductible: " + (dueTaxes * MAX_DEDUCTIBLE_RATE));
+		
+		double dueTaxes =
+			salaryIncomeTax + serviceProvisioningIncomeTax + capitalGainTax;
+		
 		double maxDeductible = dueTaxes * MAX_DEDUCTIBLE_RATE;
 		System.out.println("Maximum deductible: " + maxDeductible);
 		
 		double deductibleExpenses = educationalSpending + medicalSpending;
-		double deduction = 0;
+		double deduction = deductibleExpenses;
 		
 		if (deductibleExpenses > maxDeductible) {
 			deduction = maxDeductible;
-		} else {
-			deduction = deductibleExpenses;
 		}
 	
 		System.out.println("Deductible expenses: " + deductibleExpenses);
 		System.out.println();
+		
 		System.out.println("* SUMMARY");
 		System.out.println("Gross taxes: " + dueTaxes);
 		System.out.println("Deduction: " + deduction);
-		dueTaxes -= deduction;
 		
+		dueTaxes -= deduction;
 		System.out.println("Due taxes: " + dueTaxes);
 		System.out.println("-----------------------------");
 	}
