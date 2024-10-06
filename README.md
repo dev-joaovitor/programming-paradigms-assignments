@@ -24,5 +24,8 @@ The purpose of this program is to generate a tax report based on a person monthl
 - [ ] Print tax report
 
 #### How to run?
-     [todo]
-
+```
+cd ./taxes
+javac Taxes.java
+java Taxes
+```
