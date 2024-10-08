@@ -107,5 +107,7 @@ public class Taxes {
 		t.setEducationalSpending(sc.nextDouble());
 		
 		t.printReport();
+
+		sc.clone();
 	}
 }
