@@ -93,5 +93,7 @@ public class Bar {
 		b.setSkewerConsumed(sc.nextInt());
 		
 		b.printReport();
+
+		sc.close();
 	}
 }
