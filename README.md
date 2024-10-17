@@ -42,7 +42,7 @@ cd ./taxes/src
 javac Taxes.java
 java Taxes
 ```
-
+###### [Back to projects](#projects)
 ---
 
 ### 2. Bar
@@ -71,3 +71,4 @@ cd ./bar/src
 javac Bar.java
 java Bar
 ```
+###### [Back to projects](#projects)
