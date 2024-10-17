@@ -108,6 +108,6 @@ public class Taxes {
 		
 		t.printReport();
 
-		sc.clone();
+		sc.close();
 	}
 }
