@@ -6,7 +6,7 @@ This repository is meant to store my code assignments from the college programmi
 
 ### [1. Taxes](#1-taxes-1)
 ### [2. Bar](#2-bar-1)
-### [3. Bar](#3-bar-1)
+### [3. Athletes](#3-athletes-1)
 ---
 
 ### 1. Taxes
@@ -87,7 +87,7 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.401-b10, mixed mode)
 ###### [Back to projects](#projects)
 ---
 
-### 3. Bar
+### 3. Athletes
 
 #### Summary
 The purpose of this program is to register athletes and them measurements and generate a general measurements report.
