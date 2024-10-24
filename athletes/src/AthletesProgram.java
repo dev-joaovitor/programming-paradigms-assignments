@@ -105,7 +105,7 @@ public class AthletesProgram
 	
 	private static void printReport(Athlete[] athletes)
 	{
-		System.out.printf("\n*-*-* [REPORT] *-*-*\n\n");
+		System.out.printf("\n*-*-* [MEASUREMENTS REPORT] *-*-*\n\n");
 		
 		System.out.printf(
 			"- Average athlete weight: %.2f\n",
