@@ -6,6 +6,7 @@ This repository is meant to store my code assignments from the college programmi
 
 ### [1. Taxes](#1-taxes-1)
 ### [2. Bar](#2-bar-1)
+### [3. Bar](#3-bar-1)
 ---
 
 ### 1. Taxes
@@ -37,10 +38,16 @@ The purpose of this program is to generate a tax report based on a person monthl
 - [x] Apply deduction on gross tax
 
 #### How to run?
-```
+```sh
 cd ./taxes/src
 javac Taxes.java
 java Taxes
+```
+#### Java Version
+```
+java version "1.8.0_401"
+Java(TM) SE Runtime Environment (build 1.8.0_401-b10)
+Java HotSpot(TM) 64-Bit Server VM (build 25.401-b10, mixed mode)
 ```
 ###### [Back to projects](#projects)
 ---
@@ -66,9 +73,39 @@ The purpose of this program is to generate a payment report based on customer's 
 - [x] Sum the total fees
 
 #### How to run?
-```
+```sh
 cd ./bar/src
 javac Bar.java
 java Bar
 ```
+#### Java Version
+```
+java version "1.8.0_401"
+Java(TM) SE Runtime Environment (build 1.8.0_401-b10)
+Java HotSpot(TM) 64-Bit Server VM (build 25.401-b10, mixed mode)
+```
 ###### [Back to projects](#projects)
+---
+
+### 3. Bar
+
+#### Summary
+...
+
+#### What should it do?
+
+##### ...
+- [x] ...
+
+#### How to run?
+```sh
+cd ./athletes/src
+javac -cp . AthletesProgram.java
+java AthletesProgram
+```
+#### Java Version
+```
+java version "1.8.0_401"
+Java(TM) SE Runtime Environment (build 1.8.0_401-b10)
+Java HotSpot(TM) 64-Bit Server VM (build 25.401-b10, mixed mode)
+```
