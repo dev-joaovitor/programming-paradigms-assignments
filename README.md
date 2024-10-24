@@ -23,7 +23,7 @@ The purpose of this program is to generate a tax report based on a person monthl
 - [x] Read capital gain
 - [x] Read educational expenses
 - [x] Read medical expenses
-- [x] Print tax report
+- [x] Display the report
 
 ##### Tax Report
 - [x] Calculate monthly salary income
@@ -64,7 +64,7 @@ The purpose of this program is to generate a payment report based on customer's 
 - [x] Read the beers consumed by the customer
 - [x] Read the sodas consumed by the customer
 - [x] Read the skewers consumed by the customer
-- [x] Print the report
+- [x] Display the report
 
 ##### Payment Report
 - [x] If the customer's sex is "male", the ticket will cost R$10.00, if it's "female", it will ost R$8.00  
@@ -90,12 +90,23 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.401-b10, mixed mode)
 ### 3. Bar
 
 #### Summary
-...
+The purpose of this program is to register athletes and them measurements and generate a general measurements report.
 
 #### What should it do?
 
-##### ...
-- [x] ...
+##### Input/Output
+- [x] Read the amount of athletes that will be registered (should be a positive non-zero integer)
+- [x] Read the name of each athlete
+- [x] Read the sex of each athlete (should be M for male or F for female)
+- [x] Read the height of each athlete (should be a positive non-zero number)
+- [x] Read the weight of each athlete (should be a positive non-zero number)
+- [x] Display the report
+
+##### Measurements Report
+- [x] Calculate the athletes average weight (Men and women)
+- [x] Find the highest athlete (Men or women)
+- [x] Calculate the percentage of registered men
+- [x] Calculate the women average height (If there are no women, display a message)
 
 #### How to run?
 ```sh
