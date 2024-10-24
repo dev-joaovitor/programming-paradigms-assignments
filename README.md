@@ -90,7 +90,7 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.401-b10, mixed mode)
 ### 3. Athletes
 
 #### Summary
-The purpose of this program is to register athletes and them measurements and generate a general measurements report.
+The purpose of this program is to register athletes and their measurements and generate a general measurements report.
 
 #### What should it do?
 
