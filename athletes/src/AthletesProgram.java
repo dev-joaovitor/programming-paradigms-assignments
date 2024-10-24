@@ -64,7 +64,6 @@ public class AthletesProgram
 		for (Athlete athlete : athletes)
 		{
 			if (highestAthlete == null
-			
 				|| athlete.getHeight() > highestAthlete.getHeight())
 				{
 					highestAthlete = athlete;
@@ -128,7 +127,7 @@ public class AthletesProgram
 		
 		if (womenAmount == 0)
 		{
-			System.out.printf("There are no women registered\n");
+			System.out.printf("- There are no women registered\n");
 			return;
 		}
 
