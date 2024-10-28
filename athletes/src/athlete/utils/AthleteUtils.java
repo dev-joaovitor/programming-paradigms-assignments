@@ -4,9 +4,9 @@ import athlete.*;
 
 public class AthleteUtils
 {
-	private double womenAmount = 0;
-	private double menAmount = 0;
-	private Scanner sc = new Scanner(System.in);
+	private double womenAmount;
+	private double menAmount;
+	private Scanner scanner; 
 
 	public void incrementWomenAmount()
 	{
@@ -24,19 +24,19 @@ public class AthleteUtils
 
 		while (true)
 		{
-			value = sc.nextDouble();
+			value = scanner.nextDouble();
 
 			if (value > 0) break;
 
 			System.out.printf("Invalid number, try again: ");
 		}
-		sc.nextLine(); // clear the buffer
+		scanner.nextLine(); // clear the buffer
 		return value;
 	}
 	
 	public String getString()
 	{
-		return sc.nextLine();
+		return scanner.nextLine();
 	}
 
 	public Sex getValidSex()
@@ -46,7 +46,7 @@ public class AthleteUtils
 
 		while (true)
 		{
-			charSex = sc.next().charAt(0);
+			charSex = scanner.next().charAt(0);
 			if (charSex == 'F' || charSex == 'f')
 			{
 				sex = Sex.FEMALE;
@@ -145,12 +145,12 @@ public class AthleteUtils
 
 	public void closeScanner()
 	{
-		sc.close();
+		scanner.close();
 	}
 
 	void AthleteUtils()
 	{
-		this.sc = new Scanner(System.in);
+		this.scanner = new Scanner(System.in);
 		this.womenAmount = 0;
 		this.menAmount = 0;
 	}
