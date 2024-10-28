@@ -35,5 +35,6 @@ public class AthletesProgram
 		}
 
 		au.printReport(athletes);
+		au.closeScanner();
 	}
 }
