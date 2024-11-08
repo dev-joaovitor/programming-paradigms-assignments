@@ -135,6 +135,15 @@ public class LightBulb
 		return true;
 	}
 
+	public boolean setPrice(double price)
+	{
+		if (price <= 0.00)
+			return false;
+
+		this.price = price;
+		return true;
+	}
+
 	public boolean setColor(int color)
 	{
 		if (color < 1 && color > 3)
@@ -143,9 +152,9 @@ public class LightBulb
 		switch(color)
 		{
 			case 1:
-				this.color = Colors.Yellow; break;
+				this.color = Colors.White break;
 			case 2:
-				this.color = Colors.White; break;
+				this.color = Colors.Yellow; break;
 			case 3:
 				this.color = Colors.Colorful; break;
 			default:
