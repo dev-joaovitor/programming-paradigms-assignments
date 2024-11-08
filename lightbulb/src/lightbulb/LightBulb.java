@@ -1,5 +1,6 @@
 package lightbulb;
 import lightbulb.Types;
+import lightbulb.Colors;
 
 public class LightBulb
 {
@@ -12,12 +13,87 @@ public class LightBulb
 	private int warrantyMonths;
 	private boolean status;
 	
+	// getters
+	public String getMake()
+	{
+		return this.make;
+	}
+
+	public String getModel()
+	{
+		return this.model;
+	}
+
+	public int getWatts()
+	{
+		return this.watts;
+	}
+	
+	public Types getType()
+	{
+		return this.type;
+	}
+
+	public String getTypeString()
+	{
+		switch(this.type)
+		{
+			case Types.Incandescent:
+				return "Incandescent";
+			case Types.Fluorescent:
+				return "Fluorescent";
+			case Types.LED:
+				return "LED";
+			default:
+				return "Other";
+		}
+	}
+	
+	public double getPrice()
+	{
+		return this.price;
+	}
+
+	public Colors getColor()
+	{
+		return this.color;
+	}
+
+	public String getColorString()
+	{
+		switch(this.color)
+		{
+			case Colors.Yellow:
+				return "Yellow";
+			case Colors.White:
+				return "White";
+			case Color.Colorful:
+				return "Colorful";
+		}
+		return "No color";
+	}
+	
+	public int getWarrantyMonths()
+	{
+		return this.warrantyMonths;
+	}
+
+	public boolean getStatus()
+	{
+		return this.status;
+	}
+
+	public String getStatusString()
+	{
+		return status ? "On" : "Off";
+	}
+
+	// setters
 	public boolean setMake(String make)
 	{
 		if (make.toEquals(""))
-		{
 			return false;
-		}
+
 		this.make = make;
 		return true;
 	}
@@ -25,9 +101,8 @@ public class LightBulb
 	public boolean setModel(String model)
 	{
 		if (model.toEquals(""))
-		{
 			return false;
-		}
+		
 		this.model = model;
 		return true;
 	}
@@ -35,9 +110,8 @@ public class LightBulb
 	public boolean setWatts(int watts)
 	{
 		if (watts <= 0)
-		{
 			return false;
-		}
+
 		this.watts = watts;
 		return true;
 	}
@@ -45,9 +119,7 @@ public class LightBulb
 	public boolean setType(int type)
 	{
 		if (type < 1 && type > 3)
-		{
 			return false;
-		}
 		
 		switch(type)
 		{
@@ -60,6 +132,44 @@ public class LightBulb
 			default:
 				this.type = Types.Other;
 		}
+		return true;
+	}
+
+	public boolean setColor(int color)
+	{
+		if (color < 1 && type > 3)
+			return false;
+
+		switch(color)
+		{
+			case 1:
+				this.color = Colors.Yellow; break;
+			case 2:
+				this.color = Colors.White; break;
+			case 3:
+				this.color = Colors.Colorful; break;
+			default:
+				return false;
+		}
+		return true;
+	}
+
+	public boolean setWarrantyMonths(int months)
+	{
+		if (months <= 0)
+			return false;
+
+		this.warrantyMonths = months;
+
+		return true;
+	}
+
+	public boolean setStatus(boolean status)
+	{
+		if (this.status == status)
+			return false;
+
+		this.status = status;
 		return true;
 	}
 }
