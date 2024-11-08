@@ -38,11 +38,11 @@ public class LightBulb
 	{
 		switch(this.type)
 		{
-			case Types.Incandescent:
+			case Incandescent:
 				return "Incandescent";
-			case Types.Fluorescent:
+			case Fluorescent:
 				return "Fluorescent";
-			case Types.LED:
+			case LED:
 				return "LED";
 			default:
 				return "Other";
@@ -63,11 +63,11 @@ public class LightBulb
 	{
 		switch(this.color)
 		{
-			case Colors.Yellow:
+			case Yellow:
 				return "Yellow";
-			case Colors.White:
+			case White:
 				return "White";
-			case Color.Colorful:
+			case Colorful:
 				return "Colorful";
 		}
 		return "No color";
@@ -91,7 +91,7 @@ public class LightBulb
 	// setters
 	public boolean setMake(String make)
 	{
-		if (make.toEquals(""))
+		if (make.equals(""))
 			return false;
 
 		this.make = make;
@@ -100,7 +100,7 @@ public class LightBulb
 
 	public boolean setModel(String model)
 	{
-		if (model.toEquals(""))
+		if (model.equals(""))
 			return false;
 		
 		this.model = model;
@@ -137,7 +137,7 @@ public class LightBulb
 
 	public boolean setColor(int color)
 	{
-		if (color < 1 && type > 3)
+		if (color < 1 && color > 3)
 			return false;
 
 		switch(color)
