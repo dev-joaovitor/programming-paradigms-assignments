@@ -152,7 +152,7 @@ public class LightBulb
 		switch(color)
 		{
 			case 1:
-				this.color = Colors.White break;
+				this.color = Colors.White; break;
 			case 2:
 				this.color = Colors.Yellow; break;
 			case 3:
