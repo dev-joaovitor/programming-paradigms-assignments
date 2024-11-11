@@ -7,6 +7,7 @@ This repository is meant to store my code assignments from the college programmi
 ### [1. Taxes](#1-taxes-1)
 ### [2. Bar](#2-bar-1)
 ### [3. Athletes](#3-athletes-1)
+### [4. Light Bulb](#4-light-bulb-1)
 ---
 
 ### 1. Taxes
@@ -119,5 +120,39 @@ java AthletesProgram
 java version "1.8.0_401"
 Java(TM) SE Runtime Environment (build 1.8.0_401-b10)
 Java HotSpot(TM) 64-Bit Server VM (build 25.401-b10, mixed mode)
+```
+###### [Back to projects](#projects)
+---
+
+### 4. Light Bulb
+
+#### Summary
+The purpose of this program is to register a light bulb and be able to turn it on and off.
+
+#### What should it do?
+
+##### Input/Output
+- [x] Read the make
+- [x] Read the model
+- [x] Read the type (incandescent, fluorescent, led or other)
+- [x] Read the color (white, yellow or colorful)
+- [x] Read the power in watts (should be a positive non-zero integer)
+- [x] Read the price (should be a positive non-zero number)
+- [x] Read the warranty time in months (should be a positive non-zero integer)
+
+##### Switch Functionality
+- [x] Ask for the user if they wanna toggle the switch or exit the program.
+
+#### How to run?
+```sh
+cd ./lightbulb/src
+javac -cp . LightBulbProgram.java
+java LightBulbProgram
+```
+#### Java Version
+```
+openjdk 21.0.5 2024-10-15
+OpenJDK Runtime Environment (build 21.0.5+11)
+OpenJDK 64-Bit Server VM (build 21.0.5+11, mixed mode, sharing)
 ```
 ###### [Back to projects](#projects)
