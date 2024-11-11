@@ -89,97 +89,49 @@ public class LightBulb
 	}
 
 	// setters
-	public boolean setMake(String make)
+	public void setMake(String make)
 	{
-		if (make.equals(""))
-			return false;
-
 		this.make = make;
-		return true;
 	}
 
-	public boolean setModel(String model)
+	public void setModel(String model)
 	{
-		if (model.equals(""))
-			return false;
-		
 		this.model = model;
-		return true;
 	}
 
-	public boolean setWatts(int watts)
+	public void setWatts(int watts)
 	{
-		if (watts <= 0)
-			return false;
-
 		this.watts = watts;
-		return true;
 	}
 
-	public boolean setType(int type)
+	public void setType(Types type)
 	{
-		if (type < 1 && type > 3)
-			return false;
-		
-		switch(type)
-		{
-			case 1:
-				this.type = Types.Incandescent; break;
-			case 2:
-				this.type = Types.Fluorescent; break;
-			case 3:
-				this.type = Types.LED; break;
-			default:
-				this.type = Types.Other;
-		}
-		return true;
+		this.type = type;
 	}
 
-	public boolean setPrice(double price)
+	public void setPrice(double price)
 	{
-		if (price <= 0.00)
-			return false;
-
 		this.price = price;
-		return true;
 	}
 
-	public boolean setColor(int color)
+	public void setColor(Colors color)
 	{
-		if (color < 1 && color > 3)
-			return false;
-
-		switch(color)
-		{
-			case 1:
-				this.color = Colors.White; break;
-			case 2:
-				this.color = Colors.Yellow; break;
-			case 3:
-				this.color = Colors.Colorful; break;
-			default:
-				return false;
-		}
-		return true;
+		this.color = color;
 	}
 
-	public boolean setWarrantyMonths(int months)
+	public void setWarrantyMonths(int months)
 	{
-		if (months <= 0)
-			return false;
-
 		this.warrantyMonths = months;
-
-		return true;
 	}
 
-	public boolean setStatus(boolean status)
+	public void setStatus(boolean status)
 	{
-		if (this.status == status)
-			return false;
-
 		this.status = status;
-		return true;
+	}
+
+	public void toggleStatus()
+	{
+		this.status = !this.status;
 	}
 }
 
