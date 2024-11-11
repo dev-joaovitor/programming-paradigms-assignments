@@ -7,7 +7,7 @@ public class InputManager
 {
 	private Scanner scanner;
 
-	public int getPositeInteger()
+	public int getPositiveInteger(boolean includeZero)
 	{
 		int value = 0;
 
@@ -15,7 +15,8 @@ public class InputManager
 		{
 			value = scanner.nextInt();
 
-			if (value > 0) break;
+			if (value > 0
+				|| (value == 0 && includeZero)) break;
 
 			System.out.printf("Invalid number, try again: ");
 		}
@@ -53,33 +54,60 @@ public class InputManager
 
 	public Colors getValidBulbColor()
 	{
-		Colors color;
+		Colors color = null;
+		int colorSelect;
+
 		while(true)
-		{}
-		
+		{
+			colorSelect = scanner.nextInt();
+
+			if (colorSelect > 0 && colorSelect < 4)
+				break;
+			System.out.printf("Invalid color, try again: ");
+		}
+
+		switch(colorSelect)
+		{
+			case 1:
+				color = Colors.White; break;
+			case 2:
+				color = Colors.Yellow; break;
+			case 3:
+				color = Colors.Colorful; break;
+		}
 		return color;
 	}
 
 	public Types getValidBulbType()
 	{	
-		if (type < 1 && type > 3)
-			return false;
-		
-		switch(type)
+		Types type = null;
+		int typeSelect;
+
+		while(true)
+		{
+			typeSelect = scanner.nextInt();
+
+			if (typeSelect > 0 && typeSelect < 5)
+				break;
+			System.out.printf("Invalid type, try again: ");
+		}
+	
+		switch(typeSelect)
 		{
 			case 1:
-				return Types.Incandescent; break;
+				type = Types.Incandescent; break;
 			case 2:
-				return Types.Fluorescent; break;
+				type = Types.Fluorescent; break;
 			case 3:
-				return Types.LED; break;
-			default:
-				return Types.Other;
+				type = Types.LED; break;
+			case 4:
+				type = Types.Other;
 		}
+		return type;
 	}
 
 
-	void InputManager()
+	public InputManager()
 	{
 		this.scanner = new Scanner(System.in);
 	}
