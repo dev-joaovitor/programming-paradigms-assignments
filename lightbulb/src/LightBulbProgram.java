@@ -39,6 +39,7 @@ public class LightBulbProgram
 		System.out.printf("Color: %s\n", lb.getColorString());
 		System.out.printf("Warranty: %d months\n", lb.getWarrantyMonths());
 		System.out.printf("Price: R$%.2f\n", lb.getPrice());
+		System.out.printf("Status: %s\n", lb.getStatusString());
 		System.out.printf("*** END ***\n");
 
 		int response;
