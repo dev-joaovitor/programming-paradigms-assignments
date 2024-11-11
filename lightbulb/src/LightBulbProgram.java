@@ -54,5 +54,7 @@ public class LightBulbProgram
 			if (response == 1) lb.toggleStatus();
 		}
 		System.out.printf("\n *** Software terminated. Good bye =) *** \n");
+
+		im.close();
 	}
 }

@@ -106,6 +106,10 @@ public class InputManager
 		return type;
 	}
 
+	public void close()
+	{
+		this.scanner.close();
+	}
 
 	public InputManager()
 	{
