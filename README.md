@@ -8,6 +8,7 @@ This repository is meant to store my code assignments from the college programmi
 ### [2. Bar](#2-bar-1)
 ### [3. Athletes](#3-athletes-1)
 ### [4. Light Bulb](#4-light-bulb-1)
+### [5. Tic Tac Toe](#5-tic-tac-toe-1)
 ---
 
 ### 1. Taxes
@@ -148,6 +149,40 @@ The purpose of this program is to register a light bulb and be able to turn it o
 cd ./lightbulb/src
 javac -cp . LightBulbProgram.java
 java LightBulbProgram
+```
+#### Java Version
+```
+openjdk 21.0.5 2024-10-15
+OpenJDK Runtime Environment (build 21.0.5+11)
+OpenJDK 64-Bit Server VM (build 21.0.5+11, mixed mode, sharing)
+```
+###### [Back to projects](#projects)
+---
+
+### 5. Tic tac toe
+
+#### Summary
+A simple tic-tac-toe game to practice working with matrices.
+
+#### What should it do?
+
+##### Input/Output
+- [x] Menu to start or exit the game.
+- [x] Show the current player.
+- [x] Show the amount of plays.
+- [x] Ask for the board line.
+- [x] Ask for the board column.
+
+##### Winning logic
+- [x] 3 horizontal plays in sequence.
+- [x] 3 vertical plays in sequence.
+- [x] 3 diagonal plays in sequence.
+
+#### How to run?
+```sh
+cd ./tictactoe/src
+javac -cp . TicTacToe.java
+java TicTacToe
 ```
 #### Java Version
 ```
